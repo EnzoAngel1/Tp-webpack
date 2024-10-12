@@ -1,0 +1,32 @@
+@use "_token";
+@use "font";
+
+@mixin button_princ($clr_bg, $clr_txt) {
+  display: flex;
+  background: $clr_bg;
+  color: $clr_txt;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.2rem;
+}
+
+.btn-primary {
+  @include button_princ(token.$clrBlack, token.$clrWhite);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 10%;
+  bottom: 10%;
+  right: 29%;
+  cursor: pointer;
+}
+
+.img2 button {
+  @include button_princ(rgba(231, 202, 202, 0), token.$clrBlack);
+  position: absolute;
+  bottom: -48%;
+  right: 38%;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+}

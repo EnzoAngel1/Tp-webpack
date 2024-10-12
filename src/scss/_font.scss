@@ -1,0 +1,10 @@
+@use "token";
+@font-face {
+  font-family: "futura_book";
+  src: url("../assets/fonts/futura-light-webfont.woff2") format("woff2"),
+    url("../assets/fonts/futura-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$myfont: "futura_book";
